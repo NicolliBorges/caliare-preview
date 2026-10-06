@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caliare Tattoo House — Fredão Caliare · Realismo em Montes Claros/MG (prévia Kodra)</title>
+<meta name="description" content="Prévia de site criada pela Kodra para o Caliare Tattoo House — Fredão Caliare, realismo, hiper-realismo e surrealismo em Montes Claros/MG.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a0908">
+<link rel="preload" href="assets/antonio-bold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="img/poseidon.webp" as="image">
+<style>
+@font-face{font-family:"Antonio";src:url(assets/antonio-bold.woff) format("woff");font-weight:700;font-display:swap}
+@font-face{font-family:"Antonio";src:url(assets/antonio-light.woff) format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"Hanken";src:url(assets/hanken-regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken";src:url(assets/hanken-italic.woff) format("woff");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Hanken";src:url(assets/hanken-semibold.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
+:root{
+  --bg:#0a0908;--bg2:#13110f;--fg:#ebe5db;--dim:#8d857a;--line:rgba(235,229,219,.16);--amber:#dc9b3d;
+  --strip:34px;--gut:clamp(20px,4.6vw,76px);
+  --title:"Antonio","Arial Narrow",sans-serif;--body:"Hanken",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;padding-top:var(--strip);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,figure,blockquote,ul{margin:0;padding:0}
+ul{list-style:none}
+::selection{background:var(--amber);color:#000}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-stopped{overflow:clip}
+
+.kodra{position:fixed;inset:0 0 auto 0;height:var(--strip);z-index:90;background:var(--fg);color:#0a0908;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--gut);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.kodra a{text-decoration:none;opacity:.65}
+.kodra a:hover{opacity:1}
+.grain{position:fixed;inset:0;z-index:70;pointer-events:none;opacity:.11;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.credit{font-family:var(--title);font-weight:300;letter-spacing:.34em;text-transform:uppercase;font-size:13px;color:var(--dim)}
+.credit b{font-weight:300;color:var(--fg)}
+.amber{color:var(--amber)}
+
+/* ——— abertura ——— */
+.hero{position:relative;height:calc(100svh - var(--strip));min-height:560px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.hero__img{position:absolute;top:0;right:0;bottom:0;width:min(58vw,900px);overflow:hidden}
+.hero__img img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;filter:contrast(1.06) saturate(.85)}
+.hero__img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(10,9,8,.55) 26%,rgba(10,9,8,0) 60%),linear-gradient(0deg,var(--bg) 2%,rgba(10,9,8,0) 42%)}
+.bar{position:absolute;left:0;right:0;height:7svh;background:#000;z-index:4}
+.bar--t{top:0}.bar--b{bottom:0}
+.nav{position:absolute;top:7svh;left:0;right:0;z-index:6;display:flex;justify-content:space-between;align-items:center;padding:18px var(--gut)}
+.nav a{font-family:var(--title);font-weight:300;font-size:13px;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;opacity:.8;transition:opacity .3s,color .3s}
+.nav a:hover{opacity:1;color:var(--amber)}
+.nav div{display:flex;gap:clamp(16px,2.6vw,40px)}
+.hero__body{position:relative;z-index:5;padding:0 var(--gut) calc(7svh + clamp(22px,4.5vh,54px))}
+.hero__pre{display:block;margin-bottom:clamp(6px,1.4vh,16px)}
+.hero h1{font-family:var(--title);font-weight:700;font-size:clamp(92px,23.5vw,400px);line-height:.98;letter-spacing:-.012em;text-transform:uppercase;margin:-.06em 0 -.06em -.035em;white-space:nowrap}
+.hero h1 span{display:inline-block}
+.hero__sub{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px clamp(18px,3vw,48px);margin-top:clamp(14px,2.6vh,30px)}
+.hero__sub strong{font-family:var(--title);font-weight:300;font-size:clamp(20px,2.6vw,40px);letter-spacing:.42em;text-transform:uppercase}
+.hero__sub q{font-style:italic;font-size:clamp(17px,1.5vw,22px);quotes:"“" "”"}
+.hero__sub q + span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.hero__styles{position:absolute;right:var(--gut);bottom:calc(7svh + 26px);z-index:5;text-align:right;line-height:2}
+
+/* ——— sombra ——— */
+.sombra{position:relative;height:400vh}
+.sombra__stick{position:sticky;top:var(--strip);height:calc(100svh - var(--strip));display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,6vw,110px);align-items:center;padding:0 var(--gut);overflow:hidden}
+.stack{position:relative;height:min(84svh,900px);aspect-ratio:720/1180;justify-self:end;max-width:100%}
+.stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stack::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 90px 30px var(--bg);pointer-events:none}
+.sombra__txt{max-width:560px}
+.sombra__txt h2{font-family:var(--title);font-weight:700;text-transform:uppercase;font-size:clamp(34px,4.6vw,76px);line-height:1.02;letter-spacing:.005em;margin:18px 0 clamp(22px,4vh,44px)}
+.meter{display:flex;align-items:flex-end;gap:18px;border-top:1px solid var(--line);padding-top:18px}
+.meter output{font-family:var(--title);font-weight:700;font-size:clamp(64px,8.4vw,132px);line-height:.82;color:var(--amber);font-variant-numeric:tabular-nums;min-width:2.9ch}
+.steps{display:grid;gap:3px;padding-bottom:4px}
+.steps li{font-family:var(--title);font-weight:300;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);opacity:.45;transition:opacity .4s,color .4s}
+.steps li.on{opacity:1;color:var(--fg)}
+.sombra__end{margin-top:clamp(18px,3.4vh,36px);font-style:italic;font-size:clamp(17px,1.4vw,21px)}
+.sombra__note{position:absolute;left:var(--gut);bottom:18px;font-size:11px;color:var(--dim);letter-spacing:.06em}
+
+/* ——— película ——— */
+.reel{position:relative;background:#050505;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.reel__stick{position:sticky;top:var(--strip);height:calc(100svh - var(--strip));display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.reel__head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:0 var(--gut) clamp(10px,2vh,22px)}
+.reel__head h2{font-family:var(--title);font-weight:700;text-transform:uppercase;font-size:clamp(30px,3.6vw,56px);line-height:1}
+.holes{height:9px;background:repeating-linear-gradient(90deg,rgba(235,229,219,.22) 0 14px,transparent 14px 34px);opacity:.8}
+.track{display:flex;gap:clamp(12px,1.6vw,26px);padding:clamp(10px,1.8vh,18px) var(--gut);width:max-content;will-change:transform}
+.frame{position:relative;width:calc((100svh - var(--strip)) * .36);min-width:210px;max-width:400px;flex:none}
+.frame .pic{aspect-ratio:9/15;overflow:hidden;background:var(--bg2)}
+.frame .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .6s;filter:saturate(.8)}
+.frame:hover .pic img{transform:scale(1.05);filter:saturate(1.05)}
+.frame figcaption{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:baseline;padding-top:12px;font-size:14.5px;line-height:1.4}
+.frame figcaption b{font-family:var(--title);font-weight:700;font-size:22px;color:var(--amber);grid-row:span 2}
+.frame figcaption i{font-family:var(--title);font-style:normal;font-weight:300;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--dim)}
+.frame figcaption q{font-style:italic;quotes:"“" "”"}
+.frame--end{display:flex;flex-direction:column;justify-content:center;gap:20px;width:min(76vw,420px);padding:0 clamp(10px,3vw,50px)}
+.frame--end p{font-family:var(--title);font-weight:700;text-transform:uppercase;font-size:clamp(34px,3.6vw,56px);line-height:1.02}
+
+/* ——— cobertura ——— */
+.cover{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(28px,6vw,110px);align-items:end;padding:clamp(90px,14vw,210px) var(--gut)}
+.cover blockquote{font-family:var(--title);font-weight:700;text-transform:uppercase;font-size:clamp(40px,6.6vw,112px);line-height:.98;margin-top:20px}
+.cover blockquote em{font-style:normal;color:var(--amber)}
+.cover p{max-width:44ch;margin-top:clamp(20px,3vw,40px);color:#cfc8bc}
+.cover figure .pic{aspect-ratio:9/14;overflow:hidden}
+.cover figure img{width:100%;height:100%;object-fit:cover}
+.cover figcaption{padding-top:12px}
+.btn{display:inline-flex;align-items:center;gap:14px;margin-top:clamp(22px,3vw,40px);padding:17px 26px;border:1px solid var(--fg);font-family:var(--title);font-weight:300;font-size:14px;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;transition:background .3s,color .3s,border-color .3s;cursor:pointer;background:none;color:var(--fg)}
+.btn:hover{background:var(--amber);border-color:var(--amber);color:#000}
+.btn svg{width:16px;height:16px}
+
+/* ——— crítica ——— */
+.critics{padding:clamp(60px,9vw,130px) var(--gut);border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,6vw,110px);align-items:start}
+.score strong{display:block;font-family:var(--title);font-weight:700;font-size:clamp(130px,17vw,270px);line-height:.8;margin:16px 0 18px -.03em}
+.score .stars{color:var(--amber);letter-spacing:.3em;margin-bottom:8px}
+.score a{font-size:13px;color:var(--dim)}
+.critic{padding:clamp(22px,2.8vw,40px) 0;border-top:1px solid var(--line)}
+.critic:first-child{border-top:0;padding-top:0}
+.critic blockquote{font-size:clamp(19px,1.8vw,27px);line-height:1.42;font-style:italic}
+.critic cite{display:block;margin-top:14px;font-style:normal}
+
+/* ——— orçamento ——— */
+.quote{background:var(--fg);color:#0a0908;padding:clamp(70px,10vw,150px) var(--gut)}
+.quote .credit{color:#6d665c}
+.quote h2{font-family:var(--title);font-weight:700;text-transform:uppercase;font-size:clamp(54px,10.5vw,180px);line-height:.86;margin:14px 0 clamp(30px,5vw,70px);margin-left:-.02em}
+.form{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(28px,6vw,110px);align-items:start}
+.q{border-top:1px solid rgba(10,9,8,.2);padding:clamp(18px,2.2vw,30px) 0;display:grid;grid-template-columns:minmax(110px,1fr) 4fr;gap:12px 20px}
+.q > span,.q > label{font-family:var(--title);font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:.04em;padding-top:8px}
+.q > span small{display:block;font-family:var(--body);font-weight:400;font-size:12px;letter-spacing:.02em;text-transform:none;color:#6d665c}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:block;padding:11px 16px;border:1px solid rgba(10,9,8,.28);font-size:15px;line-height:1.2;transition:background .2s,color .2s,border-color .2s}
+.opts label:hover span{border-color:#0a0908}
+.opts input:checked + span{background:#0a0908;color:var(--fg);border-color:#0a0908}
+.opts input:focus-visible + span{outline:2px solid var(--amber);outline-offset:2px}
+.q textarea{width:100%;min-height:84px;resize:vertical;border:1px solid rgba(10,9,8,.28);background:none;font:400 16px/1.5 var(--body);color:#0a0908;padding:12px 14px;outline:none;border-radius:0}
+.q textarea:focus{border-color:#0a0908}
+.ticket{position:sticky;top:calc(var(--strip) + 24px);background:#0a0908;color:var(--fg);padding:26px 24px 24px}
+.ticket pre{margin:14px 0 20px;font:400 15px/1.6 var(--body);white-space:pre-wrap;word-break:break-word;min-height:130px}
+.ticket .btn{width:100%;justify-content:space-between;margin-top:0;border-color:var(--amber);background:var(--amber);color:#000;font-weight:700;letter-spacing:.2em}
+.ticket .btn:hover{background:var(--fg);border-color:var(--fg)}
+.ticket small{display:block;margin-top:12px;font-size:12.5px;color:var(--dim)}
+
+/* ——— créditos ——— */
+.foot{padding:clamp(50px,7vw,100px) var(--gut) 40px;text-align:center}
+.foot__roll{display:grid;gap:26px;justify-items:center}
+.foot__roll div{display:grid;gap:4px}
+.foot__roll p,.foot__roll a{font-size:17px;text-decoration:none}
+.foot__roll a:hover{color:var(--amber)}
+.foot__big{font-family:var(--title);font-weight:700;text-transform:uppercase;font-size:clamp(46px,8vw,120px);line-height:.9;margin-bottom:clamp(30px,5vw,60px)}
+.foot__k{margin-top:clamp(40px,6vw,80px);padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--dim);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;text-align:left}
+
+.fab{position:fixed;right:14px;bottom:14px;z-index:80;display:none;align-items:center;gap:10px;padding:14px 18px;background:var(--amber);color:#000;font-family:var(--title);font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transform:translateY(90px);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.fab.on{transform:none}
+
+@media (max-width:759px){
+  body{font-size:16px}
+  .kodra{justify-content:center;font-size:9.5px;letter-spacing:.1em}
+  .kodra a{display:none}
+  .nav div a:not(.nav__cta){display:none}
+  .hero__img{width:100%}
+  .hero__img::after{background:linear-gradient(0deg,var(--bg) 6%,rgba(10,9,8,.5) 38%,rgba(10,9,8,.1) 70%)}
+  .hero h1{font-size:25.5vw}
+  .hero__sub strong{font-size:5.4vw;letter-spacing:.36em;width:100%}
+  .hero__styles{position:relative;right:auto;bottom:auto;text-align:left;padding:0 var(--gut);margin:0 0 calc(7svh + 18px);line-height:1.75;font-size:11px;z-index:5}
+  .hero__body{padding-bottom:18px}
+  .hero{justify-content:flex-end}
+  .sombra{height:340vh}
+  .sombra__stick{display:flex;flex-direction:column;justify-content:center;gap:14px;align-items:stretch}
+  .stack{height:auto;width:min(66%,46svh * 720 / 1180);max-height:48svh;align-self:center;justify-self:auto}
+  .sombra__txt h2{font-size:7.2vw;margin:8px 0 12px}
+  .meter{padding-top:10px}
+  .meter output{font-size:17vw}
+  .steps li{font-size:11px}
+  .sombra__end{margin-top:10px;font-size:15px}
+  .sombra__note{position:static;margin-top:2px;font-size:10px}
+  .reel__stick{position:relative;top:0;height:auto;padding:44px 0 40px}
+  .reel__scroller{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .reel__scroller::-webkit-scrollbar{display:none}
+  .frame{width:66vw;min-width:0;scroll-snap-align:center}
+  .frame--end{width:78vw}
+  .cover{grid-template-columns:1fr}
+  .cover figure{width:70%;justify-self:end}
+  .critics{grid-template-columns:1fr}
+  .form{grid-template-columns:1fr}
+  .q{grid-template-columns:1fr}
+  .q > span,.q > label{padding-top:0}
+  .ticket{position:static}
+  .fab{display:flex}
+  .foot__k{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){.sombra{height:auto}.sombra__stick{position:relative;height:auto;padding-top:60px;padding-bottom:60px}}
+</style>
+</head>
+<body>
+<div class="kodra"><span>Prévia criada pela Kodra para Caliare Tattoo House</span><a href="https://kodratecnologia.com.br" target="_blank" rel="noopener">kodratecnologia.com.br ↗</a></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hero" id="topo">
+  <div class="hero__img"><img src="img/poseidon.webp" width="720" height="1280" alt="Tattoo em realismo preto e cinza: rosto de guerreiro com tridente no braço" fetchpriority="high"></div>
+  <div class="bar bar--t"></div><div class="bar bar--b"></div>
+  <nav class="nav" aria-label="Seções">
+    <a href="#topo">Caliare</a>
+    <div><a href="#sombra">Realismo</a><a href="#trabalhos">Trabalhos</a><a href="#avaliacoes">Avaliações</a><a class="nav__cta amber" href="#orcamento">Orçamento</a></div>
+  </nav>
+  <div class="hero__body">
+    <span class="credit hero__pre" data-in>Fredão Caliare <b>apresenta</b></span>
+    <h1 aria-label="Caliare">CALIARE</h1>
+    <div class="hero__sub" data-in>
+      <strong>Tattoo House</strong>
+      <q>Minha arte fala por mim.</q><span>Fredão Caliare</span>
+    </div>
+  </div>
+  <p class="credit hero__styles" data-in>Realismo<br>Hiper-realismo<br>Surrealismo<br><b>Montes Claros — MG</b></p>
+</header>
+
+<main>
+  <section class="sombra" id="sombra" aria-label="Um retrato ganhando sombra">
+    <div class="sombra__stick">
+      <div class="stack" role="img" aria-label="Retrato em realismo de uma mulher em oração, ganhando sombra aos poucos">
+        <img src="img/sombra-0.webp" alt="" width="720" height="1180">
+        <img src="img/sombra-1.webp" alt="" width="720" height="1180" data-layer>
+        <img src="img/sombra-2.webp" alt="" width="720" height="1180" data-layer>
+        <img src="img/sombra-3.webp" alt="" width="720" height="1180" data-layer>
+        <img src="img/sombra-4.webp" alt="" width="720" height="1180" data-layer>
+        <img src="img/sombra-5.webp" alt="" width="720" height="1180" data-layer>
+      </div>
+      <div class="sombra__txt">
+        <span class="credit">Realismo · <b>cobertura</b></span>
+        <h2>Para quem ama uma tattoo de qualidade e quer marcar sua pele com artes únicas.</h2>
+        <div class="meter">
+          <output id="pct">0%</output>
+          <ul class="steps" id="steps"><li class="on">Decalque</li><li>Traço</li><li>Sombra</li><li>Preto</li></ul>
+        </div>
+        <p class="sombra__end" id="end">“Cobertura feita para meu grande amigo.” — Fredão</p>
+      </div>
+      <span class="sombra__note">Role para sombrear. Animação criada a partir da foto da tattoo pronta.</span>
+    </div>
+  </section>
+
+  <section class="reel" id="trabalhos" aria-label="Trabalhos">
+    <div class="reel__stick">
+      <div class="reel__head"><h2>Trabalhos</h2><a class="credit" href="https://www.instagram.com/fredaocaliarestudio/" target="_blank" rel="noopener">@fredaocaliarestudio ↗</a></div>
+      <div class="holes" aria-hidden="true"></div>
+      <div class="reel__scroller">
+        <div class="track" id="track">
+          <figure class="frame"><div class="pic"><img src="img/gorila.webp" loading="lazy" width="720" height="1280" alt="Gorila rugindo em realismo no braço"></div><figcaption><b>01</b><i>Realismo</i><q>Gorila</q></figcaption></figure>
+          <figure class="frame"><div class="pic"><img src="img/onca.webp" loading="lazy" width="720" height="1280" alt="Onça-pintada em realismo preto e cinza no antebraço"></div><figcaption><b>02</b><i>Realismo</i><q>Tattoo do meu brother Marquim!</q></figcaption></figure>
+          <figure class="frame"><div class="pic"><img src="img/floki.webp" loading="lazy" width="720" height="1280" alt="Retrato em realismo de um guerreiro com o rosto marcado, no braço"></div><figcaption><b>03</b><i>Retrato</i><q>Tatuagem do meu grande amigo, o grande Floki!</q></figcaption></figure>
+          <figure class="frame"><div class="pic"><img src="img/veu.webp" loading="lazy" width="720" height="1280" alt="Mulher de véu e palácio ao fundo, realismo no antebraço"></div><figcaption><b>04</b><i>Retrato</i><q>Tatuagem que minha cliente trouxe para reproduzir na pele dela, muito obrigado pela confiança!</q></figcaption></figure>
+          <figure class="frame"><div class="pic"><img src="img/saobento.webp" loading="lazy" width="720" height="1280" alt="São Bento com a medalha ao fundo, preto e cinza no ombro"></div><figcaption><b>05</b><i>Preto e cinza</i><q>Tattoo feita para meu grande amigo</q></figcaption></figure>
+          <figure class="frame"><div class="pic"><img src="img/leao.webp" loading="lazy" width="720" height="1280" alt="Leão coroado de olhos azuis, realismo na perna"></div><figcaption><b>06</b><i>Realismo</i><q>Tattoo do meu cliente!</q></figcaption></figure>
+          <figure class="frame"><div class="pic"><img src="img/coruja.webp" loading="lazy" width="720" height="1280" alt="Coruja de olhos âmbar sobre caveira, no antebraço"></div><figcaption><b>07</b><i>Realismo</i><q>Tattoo de um tempo atrás!</q></figcaption></figure>
+          <div class="frame frame--end"><span class="credit">Próxima cena</span><p>A sua.</p><a class="btn" href="#orcamento">Pedir orçamento</a></div>
+        </div>
+      </div>
+      <div class="holes" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="cover" id="cobertura">
+    <div>
+      <span class="credit" data-up>Cobertura</span>
+      <blockquote data-up>“Amo desafios e ficaria super feliz em <em>transformar a sua</em> também.”</blockquote>
+      <p data-up>Imagine cobrir aquela tatuagem antiga e transformá-la. Agende sua avaliação e me mostre o que você quer mudar.</p>
+      <a class="btn" href="#orcamento" data-up>Agendar avaliação <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <figure data-up>
+      <div class="pic"><img src="img/tigre.webp" loading="lazy" width="720" height="1280" alt="Tigre em realismo cobrindo uma tatuagem antiga no antebraço"></div>
+      <figcaption class="credit">“Cobertura antes e depois!”</figcaption>
+    </figure>
+  </section>
+
+  <section class="critics" id="avaliacoes">
+    <div class="score">
+      <span class="credit">Avaliações no Google</span>
+      <strong data-up>4,9</strong>
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Caliare+Tattoo+House+Montes+Claros" target="_blank" rel="noopener">173 avaliações — ver no Google ↗</a>
+    </div>
+    <div>
+      <article class="critic" data-up><blockquote>“Atendimento personalizado, na data e hora marcadas, explicação com os cuidados antes e após a tatuagem! […] Me sinto honrado de ser tela de um artista como Fred!”</blockquote><cite class="credit">Guilherme Araújo Lacerda</cite></article>
+      <article class="critic" data-up><blockquote>“Super recomendo, fiz minha primeira tattoo com ele e posso dizer que já sai de lá pensando na segunda tattoo, ambiente super agradável, pessoal nota 1000.”</blockquote><cite class="credit">Adriano Andrade</cite></article>
+    </div>
+  </section>
+
+  <section class="quote" id="orcamento">
+    <span class="credit">Orçamento pelo WhatsApp</span>
+    <h2>Qual é a<br>sua ideia?</h2>
+    <form class="form" id="form" novalidate>
+      <div>
+        <div class="q"><span>Estilo</span>
+          <div class="opts" role="radiogroup" aria-label="Estilo">
+            <label><input type="radio" name="estilo" value="Realismo" checked><span>Realismo</span></label>
+            <label><input type="radio" name="estilo" value="Hiper-realismo"><span>Hiper-realismo</span></label>
+            <label><input type="radio" name="estilo" value="Surrealismo"><span>Surrealismo</span></label>
+            <label><input type="radio" name="estilo" value="Cobertura"><span>Cobertura</span></label>
+            <label><input type="radio" name="estilo" value="Ainda não sei"><span>Ainda não sei</span></label>
+          </div>
+        </div>
+        <div class="q"><span>Local do corpo</span>
+          <div class="opts" role="radiogroup" aria-label="Local do corpo">
+            <label><input type="radio" name="local" value="Antebraço" checked><span>Antebraço</span></label>
+            <label><input type="radio" name="local" value="Braço"><span>Braço</span></label>
+            <label><input type="radio" name="local" value="Ombro"><span>Ombro</span></label>
+            <label><input type="radio" name="local" value="Peito"><span>Peito</span></label>
+            <label><input type="radio" name="local" value="Costas"><span>Costas</span></label>
+            <label><input type="radio" name="local" value="Perna"><span>Perna</span></label>
+            <label><input type="radio" name="local" value="Outro lugar"><span>Outro lugar</span></label>
+          </div>
+        </div>
+        <div class="q"><span>Tamanho</span>
+          <div class="opts" role="radiogroup" aria-label="Tamanho">
+            <label><input type="radio" name="tam" value="Pequena (até 10 cm)"><span>Até 10 cm</span></label>
+            <label><input type="radio" name="tam" value="Média (10 a 20 cm)" checked><span>10 a 20 cm</span></label>
+            <label><input type="radio" name="tam" value="Grande (mais de 20 cm)"><span>Mais de 20 cm</span></label>
+            <label><input type="radio" name="tam" value="Fechamento"><span>Fechamento</span></label>
+          </div>
+        </div>
+        <div class="q"><label for="ideia">Ideia<small style="display:block;font:400 12px var(--body);text-transform:none;letter-spacing:.02em;color:#6d665c">opcional</small></label>
+          <textarea id="ideia" placeholder="Um retrato, um animal, uma cobertura…"></textarea>
+        </div>
+      </div>
+      <aside class="ticket">
+        <span class="credit">Sua mensagem</span>
+        <pre id="msg" aria-live="polite"></pre>
+        <a class="btn" id="send" href="https://wa.me/5538992401000" target="_blank" rel="noopener">Enviar no WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <small>Abre o WhatsApp do estúdio — (38) 99240-1000.</small>
+      </aside>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot__big">Caliare<br>Tattoo House</p>
+  <div class="foot__roll">
+    <div><span class="credit">Estúdio de tattoo e piercing</span><p>Rua Aimorés, 116 — Cândida Câmara<br>Montes Claros/MG</p></div>
+    <div><span class="credit">Atendimento</span><p>Segunda a sábado, 10h às 19h</p></div>
+    <div><span class="credit">Contato</span><a href="https://wa.me/5538992401000" target="_blank" rel="noopener">(38) 99240-1000</a><a href="https://www.instagram.com/fredaocaliarestudio/" target="_blank" rel="noopener">@fredaocaliarestudio</a></div>
+    <div><span class="credit">Mapa</span><a href="https://www.google.com/maps/search/?api=1&query=Caliare+Tattoo+House+Montes+Claros" target="_blank" rel="noopener">Abrir no Google Maps ↗</a></div>
+  </div>
+  <div class="foot__k"><span>Fotos e legendas: Instagram @fredaocaliarestudio. Avaliações e horário: Google.</span><span>Prévia criada pela <a href="https://kodratecnologia.com.br" target="_blank" rel="noopener">Kodra</a></span></div>
+</footer>
+<a class="fab" id="fab" href="#orcamento">Orçamento</a>
+
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="assets/lenis.min.js"></script>
+<script>
+(function(){
+  var form=document.getElementById('form'),msg=document.getElementById('msg'),send=document.getElementById('send'),ideia=document.getElementById('ideia');
+  function val(n){var el=form.querySelector('input[name="'+n+'"]:checked');return el?el.value:''}
+  function update(){
+    var lines=['Olá, Fred! Vi o site e quero um orçamento.','','Estilo: '+val('estilo'),'Local do corpo: '+val('local'),'Tamanho: '+val('tam')];
+    if(ideia.value.trim()) lines.push('Ideia: '+ideia.value.trim());
+    var t=lines.join('\n'); msg.textContent=t; send.href='https://wa.me/5538992401000?text='+encodeURIComponent(t);
+  }
+  form.addEventListener('input',update);form.addEventListener('change',update);form.addEventListener('submit',function(e){e.preventDefault()});update();
+
+  var fab=document.getElementById('fab');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!window.gsap||!window.ScrollTrigger||reduce){fab.classList.add('on');return}
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ignoreMobileResize:true});
+  var lenis=null;
+  if(window.Lenis){lenis=new Lenis({lerp:.1});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0)}
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var el=document.querySelector(a.getAttribute('href'));if(!el)return;e.preventDefault();if(lenis)lenis.scrollTo(el,{offset:-34,duration:1.5});else window.scrollTo({top:el.getBoundingClientRect().top+scrollY-34,behavior:'smooth'})})});
+
+  /* abertura */
+  var h1=document.querySelector('.hero h1'),txt=h1.textContent;h1.textContent='';
+  txt.split('').forEach(function(c){var s=document.createElement('span');s.textContent=c;s.setAttribute('aria-hidden','true');h1.appendChild(s)});
+  gsap.set('.hero h1 span',{yPercent:110,opacity:0});
+  gsap.set('[data-in]',{opacity:0,y:18});
+  gsap.set('.bar--t',{yPercent:-100});gsap.set('.bar--b',{yPercent:100});
+  gsap.set('.hero__img img',{scale:1.28,opacity:0});
+  h1.style.overflow='hidden';
+  function intro(){ if(intro.done)return;intro.done=true;
+    gsap.timeline()
+      .to('.hero__img img',{opacity:1,duration:1.6,ease:'power2.out'},0)
+      .to('.hero__img img',{scale:1.06,duration:3.4,ease:'power2.out'},0)
+      .to('.bar',{yPercent:0,duration:1.1,ease:'power3.inOut'},.2)
+      .to('.hero h1 span',{yPercent:0,opacity:1,duration:1.1,ease:'power4.out',stagger:.07},.7)
+      .to('[data-in]',{opacity:1,y:0,duration:.9,ease:'power2.out',stagger:.15},1.5);
+  }
+  ((document.fonts&&document.fonts.ready)||Promise.resolve()).then(function(){setTimeout(intro,100)});setTimeout(intro,1800);
+  gsap.to('.hero__img',{yPercent:10,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.to('.hero__body',{yPercent:-14,opacity:.2,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* retrato ganhando sombra */
+  var layers=gsap.utils.toArray('[data-layer]'),pct=document.getElementById('pct'),steps=document.querySelectorAll('#steps li');
+  gsap.set(layers,{opacity:0});gsap.set('#end',{opacity:0,y:14});
+  var tl=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{trigger:'.sombra',start:'top 45%',end:'bottom bottom',scrub:.5,onUpdate:function(self){
+    var p=Math.min(1,tl.progress()/0.9),n=Math.round(p*100);pct.textContent=n+'%';
+    var k=p<.2?0:p<.45?1:p<.8?2:3;steps.forEach(function(li,i){li.classList.toggle('on',i===k)});
+  }}});
+  layers.forEach(function(l,i){tl.to(l,{opacity:1,duration:1},i)});
+  tl.fromTo('.stack',{scale:.94},{scale:1,duration:5},0).to('#end',{opacity:1,y:0,duration:.5},4.9).to({}, {duration:.1});
+
+  /* película horizontal (computador) */
+  var mm=gsap.matchMedia();
+  mm.add('(min-width:760px)',function(){
+    var reel=document.querySelector('.reel'),track=document.getElementById('track');
+    function dist(){return Math.max(0,track.scrollWidth-document.documentElement.clientWidth)}
+    function size(){reel.style.height=(dist()+window.innerHeight)+'px'}
+    size();
+    var tw=gsap.to(track,{x:function(){return -dist()},ease:'none',scrollTrigger:{trigger:reel,start:'top top',end:'bottom bottom',scrub:.6,invalidateOnRefresh:true,onRefreshInit:size}});
+    return function(){reel.style.height='';gsap.set(track,{x:0})};
+  });
+
+  gsap.utils.toArray('[data-up]').forEach(function(el){gsap.fromTo(el,{opacity:0,y:34},{opacity:1,y:0,duration:1,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 92%',once:true}})});
+  ScrollTrigger.create({trigger:'.sombra',start:'top 40%',endTrigger:'#orcamento',end:'top 75%',onToggle:function(s){fab.classList.toggle('on',s.isActive)}});
+  window.addEventListener('load',function(){ScrollTrigger.refresh()});
+})();
+</script>
+</body>
+</html>
